@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahogany Jr | Official Fan Page</title>
+<meta name="description" content="The unofficial-official fan page for Mahogany Jr — bio, gallery, fun facts, and the fan wall.">
+<link rel="icon" href="images/mahogany-avatar.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a class="brand" href="#top">
+      <img src="images/mahogany-avatar.svg" alt="" class="brand-avatar">
+      <span>Mahogany Jr</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#facts">Fun Facts</a></li>
+      <li><a href="#wall">Fan Wall</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="top" class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="eyebrow">The unofficial-official</p>
+      <h1>Mahogany&nbsp;Jr <span class="accent">Fan Page</span></h1>
+      <p class="tagline">Warm and a little wild — this corner of the internet exists for one reason: to celebrate Mahogany Jr.</p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn btn-primary">See the Gallery</a>
+        <a href="#wall" class="btn btn-ghost">Sign the Fan Wall</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <img src="images/mahogany-avatar.svg" alt="Portrait of Mahogany Jr" class="portrait-img">
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-heading">
+      <h2>About Mahogany Jr</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>The Story</h3>
+        <p>
+          Every fan page starts somewhere, and this one starts with Mahogany Jr —
+          a name that's become shorthand for something worth showing up for.
+          Whether it's the personality, the presence, or just the vibe, this page
+          is a running scrapbook of everything worth remembering.
+        </p>
+        <p class="editable-note">✏️ Swap this paragraph for the real bio whenever you're ready.</p>
+      </div>
+      <ul class="stat-list">
+        <li><span class="stat-label">Status</span><span class="stat-value">Certified favorite</span></li>
+        <li><span class="stat-label">Signature color</span><span class="stat-value">Mahogany brown</span></li>
+        <li><span class="stat-label">Known for</span><span class="stat-value">Big presence, bigger charm</span></li>
+        <li><span class="stat-label">Fan page since</span><span class="stat-value">2026</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gallery" class="section section-alt">
+    <div class="section-heading">
+      <h2>Gallery</h2>
+      <div class="rule"></div>
+      <p class="section-sub">A few favorite moments. Drop real photos into <code>images/</code> and swap the <code>src</code> attributes below.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="gallery-item swatch-1"><figcaption>Moment One</figcaption></figure>
+      <figure class="gallery-item swatch-2"><figcaption>Moment Two</figcaption></figure>
+      <figure class="gallery-item swatch-3"><figcaption>Moment Three</figcaption></figure>
+      <figure class="gallery-item swatch-4"><figcaption>Moment Four</figcaption></figure>
+      <figure class="gallery-item swatch-5"><figcaption>Moment Five</figcaption></figure>
+      <figure class="gallery-item swatch-6"><figcaption>Moment Six</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="facts" class="section">
+    <div class="section-heading">
+      <h2>Fun Facts</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="facts-grid">
+      <div class="fact-card">
+        <span class="fact-num">01</span>
+        <p>Named for the rich, warm wood tone — deep, a little reddish, always distinctive.</p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-num">02</span>
+        <p>The "Jr" is basically a title at this point. It just fits.</p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-num">03</span>
+        <p>Has main character energy in every single photo.</p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-num">04</span>
+        <p>This page's color palette — warm browns, soft reds, a hint of chartreuse — was picked to match the mood exactly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="wall" class="section section-alt">
+    <div class="section-heading">
+      <h2>Fan Wall</h2>
+      <div class="rule"></div>
+      <p class="section-sub">Leave a note. It stays right here in your browser for now — wire it up to a backend later if you want it to stick around for everyone.</p>
+    </div>
+
+    <form id="wallForm" class="wall-form">
+      <input type="text" id="wallName" placeholder="Your name" required maxlength="40">
+      <textarea id="wallMessage" placeholder="Say something nice..." required maxlength="200" rows="3"></textarea>
+      <button type="submit" class="btn btn-primary">Sign the Wall</button>
+    </form>
+
+    <ul id="wallList" class="wall-list"></ul>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="section-heading">
+      <h2>Get in Touch</h2>
+      <div class="rule"></div>
+    </div>
+    <p>Have a photo, a story, or just want to say hi? Reach out.</p>
+    <a class="btn btn-ghost" href="mailto:fanpage@example.com">fanpage@example.com</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Mahogany Jr Fan Page. Made with warmth, browns, and a little chartreuse.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
