@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="avatarTitle">
+  <title id="avatarTitle">Portrait of Mahogany Jr</title>
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#7a4a34"/>
+      <stop offset="100%" stop-color="#3e2723"/>
+    </radialGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a5673f"/>
+      <stop offset="100%" stop-color="#7b4a2d"/>
+    </linearGradient>
+    <linearGradient id="earGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c97064"/>
+      <stop offset="100%" stop-color="#8c4a3c"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="200" cy="200" r="190" fill="url(#bgGlow)"/>
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#b8d430" stroke-width="3" opacity="0.35"/>
+
+  <!-- ears -->
+  <ellipse cx="120" cy="120" rx="42" ry="58" fill="url(#earGrad)" transform="rotate(-18 120 120)"/>
+  <ellipse cx="280" cy="120" rx="42" ry="58" fill="url(#earGrad)" transform="rotate(18 280 120)"/>
+  <ellipse cx="120" cy="126" rx="22" ry="34" fill="#5a3222" transform="rotate(-18 120 126)"/>
+  <ellipse cx="280" cy="126" rx="22" ry="34" fill="#5a3222" transform="rotate(18 280 126)"/>
+
+  <!-- head -->
+  <ellipse cx="200" cy="215" rx="130" ry="118" fill="url(#faceGrad)"/>
+
+  <!-- muzzle -->
+  <ellipse cx="200" cy="255" rx="66" ry="46" fill="#c9926a"/>
+
+  <!-- eyes -->
+  <circle cx="155" cy="200" r="14" fill="#2b1a12"/>
+  <circle cx="245" cy="200" r="14" fill="#2b1a12"/>
+  <circle cx="159" cy="195" r="4" fill="#f8ecd8"/>
+  <circle cx="249" cy="195" r="4" fill="#f8ecd8"/>
+
+  <!-- blush -->
+  <ellipse cx="140" cy="235" rx="16" ry="10" fill="#c97064" opacity="0.6"/>
+  <ellipse cx="260" cy="235" rx="16" ry="10" fill="#c97064" opacity="0.6"/>
+
+  <!-- nose + mouth -->
+  <ellipse cx="200" cy="245" rx="13" ry="9" fill="#2b1a12"/>
+  <path d="M200 254 Q200 268 180 274" stroke="#2b1a12" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M200 254 Q200 268 220 274" stroke="#2b1a12" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- little chartreuse bandana -->
+  <path d="M120 275 Q200 320 280 275 L268 300 Q200 335 132 300 Z" fill="#b8d430"/>
+  <circle cx="200" cy="303" r="6" fill="#7a4a34"/>
+</svg>
